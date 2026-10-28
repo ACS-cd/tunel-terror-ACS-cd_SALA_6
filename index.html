@@ -63,12 +63,340 @@
         <img src="img/puerta.png" alt="Puerta de madera antigua con cerrojos oxidados en un pasillo oscuro" width="450"></div>
 
       
+<style>
+#reto-miedo {
+  background: radial-gradient(ellipse, #30221c, #080706);
+  color: #ead6ad;
+  font-family: Georgia, serif;
+  text-align: center;
+  padding: 30px 15px;
+  border-radius: 12px;
+}
+
+#reto-miedo h2 {
+  color: #d9b477;
+  letter-spacing: 4px;
+  text-shadow: 0 0 12px #a34b21;
+}
+
+#reto-miedo .escena {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 35px auto;
+  min-height: 280px;
+}
+
+#reto-miedo .puerta {
+  position: relative;
+  width: 155px;
+  height: 245px;
+  background: linear-gradient(90deg, #21120b, #654127, #28170e);
+  border: 7px solid #947044;
+  border-radius: 75px 75px 0 0;
+  box-shadow: inset 0 0 20px #000, 0 0 20px #000;
+  transform-origin: left center;
+  transition: transform 1.5s, box-shadow 1s;
+}
+
+#reto-miedo .puerta::before {
+  content: "";
+  position: absolute;
+  inset: 15px;
+  border: 3px solid #a27b47;
+  border-radius: 60px 60px 0 0;
+}
+
+#reto-miedo .puerta::after {
+  content: "✦";
+  position: absolute;
+  top: 45%;
+  left: 43%;
+  color: #e8c16e;
+  font-size: 28px;
+}
+
+#reto-miedo .puerta.abierta {
+  transform: perspective(700px) rotateY(-65deg);
+}
+
+#reto-miedo .llave {
+  position: absolute;
+  right: 12px;
+  top: 53%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #e1bd73;
+}
+
+#reto-miedo .velas {
+  display: flex;
+  align-items: flex-end;
+  gap: 9px;
+  padding-bottom: 3px;
+}
+
+#reto-miedo .vela {
+  position: relative;
+  width: 19px;
+  height: 65px;
+  background: linear-gradient(90deg, #9c8059, #f4dfb1, #a88a5d);
+  border-radius: 4px 4px 2px 2px;
+  box-shadow: 0 0 12px #ff9c32;
+  transition: background 0.5s, box-shadow 0.5s;
+}
+
+#reto-miedo .vela:nth-child(2),
+#reto-miedo .vela:nth-child(4) {
+  height: 82px;
+}
+
+#reto-miedo .vela:nth-child(3) {
+  height: 72px;
+}
+
+#reto-miedo .llama {
+  position: absolute;
+  width: 12px;
+  height: 23px;
+  top: -22px;
+  left: 3px;
+  background: #ffad28;
+  border-radius: 50% 50% 35% 35%;
+  box-shadow: 0 0 12px #ff7b16, 0 0 22px #ff9c32;
+  animation: parpadeo 0.7s infinite alternate;
+}
+
+#reto-miedo .llama::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 3px;
+  width: 6px;
+  height: 12px;
+  background: #fff3b0;
+  border-radius: 50%;
+}
+
+@keyframes parpadeo {
+  from { transform: scale(1) rotate(-5deg); }
+  to { transform: scale(.85, 1.1) rotate(7deg); }
+}
+
+/* Vela apagada */
+#reto-miedo .vela.apagada {
+  background: linear-gradient(90deg, #37312b, #777064, #393129);
+  box-shadow: none;
+}
+
+#reto-miedo .vela.apagada .llama {
+  display: none;
+}
+
+#reto-miedo .letras {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 22px 0;
+}
+
+#reto-miedo .letras input {
+  width: 43px;
+  height: 48px;
+  box-sizing: border-box;
+  text-align: center;
+  font: 24px Georgia, serif;
+  text-transform: uppercase;
+  color: #f3d7a0;
+  background: #17110e;
+  border: 1px solid #967346;
+  border-radius: 5px;
+}
+
+#reto-miedo button {
+  margin: 5px;
+  padding: 12px 17px;
+  color: #f7dfb0;
+  background: #482b19;
+  border: 1px solid #b48a4c;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Georgia, serif;
+}
+
+#reto-miedo button:hover {
+  background: #704629;
+}
+
+#reto-miedo #mensaje-miedo {
+  min-height: 48px;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+#reto-miedo .error { color: #ed7667; }
+#reto-miedo .exito { color: #f0ce7e; }
+
+@media (max-width: 420px) {
+  #reto-miedo .escena { gap: 18px; }
+  #reto-miedo .puerta {
+    width: 125px;
+    height: 210px;
+  }
+  #reto-miedo .velas { gap: 5px; }
+  #reto-miedo .vela { width: 16px; }
+  #reto-miedo .letras input {
+    width: 38px;
+    height: 44px;
+  }
+}
+</style>
+
+<div id="reto-miedo">
+  <h2>LA PUERTA DEL MIEDO</h2>
+
+  <p>Solo una palabra puede abrir esta puerta...</p>
+
+  <div class="escena">
+    <div class="velas" id="velas-miedo">
+      <div class="vela"><span class="llama"></span></div>
+      <div class="vela"><span class="llama"></span></div>
+      <div class="vela"><span class="llama"></span></div>
+      <div class="vela"><span class="llama"></span></div>
+      <div class="vela"><span class="llama"></span></div>
+    </div>
+
+    <div class="puerta" id="puerta-miedo">
+      <span class="llave"></span>
+    </div>
+  </div>
+
+  <p id="contador-miedo">Velas encendidas: 5 de 5</p>
+  <p>Introduce la palabra de cinco letras:</p>
+
+  <form id="formulario-miedo">
+    <div class="letras">
+      <input maxlength="1" aria-label="Primera letra" required>
+      <input maxlength="1" aria-label="Segunda letra" required>
+      <input maxlength="1" aria-label="Tercera letra" required>
+      <input maxlength="1" aria-label="Cuarta letra" required>
+      <input maxlength="1" aria-label="Quinta letra" required>
+    </div>
+
+    <button type="submit">Comprobar palabra</button>
+    <button type="button" id="reiniciar-miedo">Reiniciar juego</button>
+  </form>
+
+  <div id="mensaje-miedo" role="status" aria-live="polite">
+    Las cinco llamas iluminan tu camino...
+  </div>
+</div>
+
+<script>
+(function () {
+  const juego = document.getElementById("reto-miedo");
+  const formulario = document.getElementById("formulario-miedo");
+  const casillas = [...formulario.querySelectorAll("input")];
+  const puerta = document.getElementById("puerta-miedo");
+  const velas = [...document.querySelectorAll("#velas-miedo .vela")];
+  const contador = document.getElementById("contador-miedo");
+  const mensaje = document.getElementById("mensaje-miedo");
+  const botonReinicio = document.getElementById("reiniciar-miedo");
+
+  let errores = 0;
+  let terminado = false;
+
+  casillas.forEach((casilla, i) => {
+    casilla.addEventListener("input", function () {
+      this.value = this.value
+        .replace(/[^a-záéíóúüñ]/gi, "")
+        .slice(-1)
+        .toUpperCase();
+
+      if (this.value && i < casillas.length - 1) {
+        casillas[i + 1].focus();
+      }
+    });
+
+    casilla.addEventListener("keydown", function (e) {
+      if (e.key === "Backspace" && !this.value && i > 0) {
+        casillas[i - 1].focus();
+      }
+    });
+  });
+
+  formulario.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    if (terminado) return;
+
+    const palabra = casillas
+      .map(c => c.value)
+      .join("")
+      .toUpperCase();
+
+    if (palabra === "MIEDO") {
+      terminado = true;
+      puerta.classList.add("abierta");
+      mensaje.className = "exito";
+      mensaje.textContent =
+        "¡La palabra era MIEDO! La puerta se abre lentamente...";
+      casillas.forEach(c => c.disabled = true);
+      return;
+    }
+
+    // Cada error apaga exactamente una vela.
+    velas[errores].classList.add("apagada");
+    errores++;
+
+    const encendidas = 5 - errores;
+    contador.textContent =
+      "Velas encendidas: " + encendidas + " de 5";
+
+    casillas.forEach(c => c.value = "");
+    casillas[0].focus();
+
+    if (encendidas === 0) {
+      terminado = true;
+      mensaje.className = "error";
+      mensaje.textContent =
+        "Las cinco velas se han apagado. La oscuridad ha ganado. Reinicia el juego para intentarlo otra vez.";
+      casillas.forEach(c => c.disabled = true);
+    } else {
+      mensaje.className = "error";
+      mensaje.textContent =
+        "¡Respuesta incorrecta! Una vela se ha apagado. Te quedan " +
+        encendidas + (encendidas === 1 ? " vela encendida." : " velas encendidas.");
+    }
+  });
+
+  botonReinicio.addEventListener("click", function () {
+    errores = 0;
+    terminado = false;
+
+    formulario.reset();
+    casillas.forEach(c => c.disabled = false);
+    velas.forEach(v => v.classList.remove("apagada"));
+    puerta.classList.remove("abierta");
+
+    contador.textContent = "Velas encendidas: 5 de 5";
+    mensaje.className = "";
+    mensaje.textContent = "Las cinco llamas iluminan tu camino...";
+
+    casillas[0].focus();
+  });
+})();
+</script>
+
 
     </main>
 
     <footer>
         <!-- Las imágenes han sido generadas por inteligencia artificial, no sacadas de pixabay. -->
-    <p>Imágenes de «Pixabay</p>><a href="https://pixabay.com" target="_blank" rel="noopener noreferrer">
+    <a href="https://pixabay.com" target="_blank" rel="noopener noreferrer"><p>Imágenes de «Pixabay</p>
     <p>Sala creada por ACS-cd para el túnel del terror</p>
     </footer>
 </body>

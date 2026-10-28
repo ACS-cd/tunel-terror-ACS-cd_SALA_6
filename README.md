@@ -109,6 +109,25 @@ iframe
 - **Decisión en mi sala:** uso ... en "..." porque ...
 - **Pista de nivel usada:** ninguna
 
+### Reto 7
+- **Pregunta:**Compara al menos dos formas de esconder la pista solo con HTML (letras resaltadas en el pergamino, un bloque desplegable, el texto que aparece al pasar el ratón, un comentario…).
+Para cada una: ¿se ve a simple vista? ¿un visitante la encuentra en 1 minuto? ¿encaja con lo que espera el programa de 2.º? No tengo compañero de segundo, así que esta pregunta queda inválida.
+Elige una y justifícalo en el diario. La forma propuesta en esta guía es una opción, no la obligatoria.
+- **Fuente:** enlace a MDN o a la especificación [text](https://developer.mozilla.org/es/docs/Web/HTML/Reference/Elements/details) [text](https://developer.mozilla.org/es/docs/Web/HTML/Reference/Elements/abbr) [text](https://developer.mozilla.org/es/docs/Web/HTML/Reference/Elements/mark)
+- **Lo que dice (con mis palabras):** Mark representa el texto en negrita como nota. Abbr es una abreviación, se ve el contenido al pasar el ratón por encima. Details, se usa para mostrar información adicional.
+- **Prueba en pruebas.html:** 
+- **Decisión en mi sala:** uso ... en "..." porque ...
+- **Pista de nivel usada:** ninguna
+
+### Reto 8
+- **Pregunta:** Para cada error que te dé el validador: ¿qué significa y por qué ocurrió? Pues que las categorías están mal, se duplican o incluso faltan.
+¿Qué cambiaste para corregirlo? El código.
+- **Fuente:** enlace a MDN o a la especificación https://validator.w3.org
+- **Lo que dice (con mis palabras):** Un validador de HTML
+- **Prueba en pruebas.html:** 
+- **Decisión en mi sala:** uso ... en "..." porque ...
+- **Pista de nivel usada:** ninguna
+
 ## Captura
 ![Mi sala](docs/captura.png)
 
