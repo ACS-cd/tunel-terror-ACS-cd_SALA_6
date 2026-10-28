@@ -98,6 +98,17 @@ iframe
 - **Decisión en mi sala:** uso ... en "..." porque ...
 - **Pista de nivel usada:** ninguna
 
+### Reto 3
+- **Pregunta:**¿Cómo salto a una parte de la misma página? ¿Qué relación hay entre el enlace y el id de la sección? Usando el menú de navegación. El enlace usa el id de la sección para saber dónde saltar.
+¿Cómo enlazo a otra página de mi sitio? Utilizando el html correspondiente o el nombre de sección dada a dicha parte de la página.
+¿Qué hace abrir un enlace en otra pestaña, qué riesgo tiene y cómo se evita? se pierde el flow de navegación y la atención del usuario, quiñen no quiere clikar varias veces para cerrar y/o abrir páginas.
+¿Qué etiqueta semántica agrupa un menú? ¿Y el pie de página?
+- **Fuente:** enlace a MDN o a la especificación [text](https://developer.mozilla.org/es/docs/Web/HTML/Reference/Elements/nav) [text](https://developer.mozilla.org/es/docs/Web/HTML/Reference/Elements/a)
+- **Lo que dice (con mis palabras):** Representa la zona de la página que sirve como conexión de navegación con el resto de la web.
+- **Prueba en pruebas.html:** 
+- **Decisión en mi sala:** uso ... en "..." porque ...
+- **Pista de nivel usada:** ninguna
+
 ## Captura
 ![Mi sala](docs/captura.png)
 
