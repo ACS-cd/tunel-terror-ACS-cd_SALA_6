@@ -129,7 +129,7 @@ Elige una y justifícalo en el diario. La forma propuesta en esta guía es una o
 - **Pista de nivel usada:** ninguna
 
 ## Captura
-![Mi sala](docs/captura.png)
+![Mi sala](docs/validacion.png)
 
 ## Créditos
 Imágenes y sonidos con autor, web y licencia.
