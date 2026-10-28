@@ -77,12 +77,23 @@ Figure es contenido que lleva un título agrupado a ello, es independiente al re
 - **Decisión en mi sala:** uso ... en "..." porque ...
 - **Pista de nivel usada:** ninguna
 
-### Reto 6
+### Reto 6 Parte 1
 - **Pregunta:** ¿Qué partes del esqueleto del paso 1 se repiten en cualquier página? ¿Cuáles cambian? La parte que contiene los metadatos, header y los comentarios.
 ¿Cómo enlazas la misma hoja de estilos desde una segunda página? Colocando el nombre concreto que se ha estipulado en la hoja css.
 ¿Qué es un atributo global como class y para qué lo usa la hoja de estilos? Es una etiqueta que se puede añadir para dar determinadas características- La hoja de estilos lo usa para determinar qué parte va en un estilo u otro.
 - **Fuente:** enlace a MDN o a la especificación [text](https://developer.mozilla.org/es/docs/Web/HTML/Reference/Global_attributes)
-- **Lo que dice (con mis palabras):**  Soon características que se pueden añadir a los elementos para diferenciarlos de otros o sólo aplicar un estado específico al que contenga la etiqueta concreta.
+- **Lo que dice (con mis palabras):**  Son características que se pueden añadir a los elementos para diferenciarlos de otros o sólo aplicar un estado específico al que contenga la etiqueta concreta.
+- **Prueba en pruebas.html:** 
+- **Decisión en mi sala:** uso ... en "..." porque ...
+- **Pista de nivel usada:** ninguna
+
+### Reto 6 Parte 2
+- **Pregunta:**¿Qué etiqueta muestra una página dentro de otra?
+iframe
+¿Por qué es obligatorio darle un nombre accesible? ¿Qué oye una persona que usa lector de pantalla si no lo tiene? Porque el lector de página para personas con dificultades visuales lee dichos. No leería nada o leería la palabra con la importancia equivocada.
+¿Qué atributos controlan su tamaño? strong/small
+- **Fuente:** enlace a MDN o a la especificación [text](https://developer.mozilla.org/es/docs/Web/HTML/Reference/Elements/iframe)
+- **Lo que dice (con mis palabras):** Crea ventanas que enlazan una página o servicio con otra.
 - **Prueba en pruebas.html:** 
 - **Decisión en mi sala:** uso ... en "..." porque ...
 - **Pista de nivel usada:** ninguna
