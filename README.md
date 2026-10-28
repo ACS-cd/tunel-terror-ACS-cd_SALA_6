@@ -77,6 +77,15 @@ Figure es contenido que lleva un título agrupado a ello, es independiente al re
 - **Decisión en mi sala:** uso ... en "..." porque ...
 - **Pista de nivel usada:** ninguna
 
+### Reto 6
+- **Pregunta:** ¿Qué partes del esqueleto del paso 1 se repiten en cualquier página? ¿Cuáles cambian?
+¿Cómo enlazas la misma hoja de estilos desde una segunda página?
+¿Qué es un atributo global como class y para qué lo usa la hoja de estilos?
+- **Fuente:** enlace a MDN o a la especificación 
+- **Lo que dice (con mis palabras):** 
+- **Prueba en pruebas.html:** 
+- **Decisión en mi sala:** uso ... en "..." porque ...
+- **Pista de nivel usada:** ninguna
 
 ## Captura
 ![Mi sala](docs/captura.png)
