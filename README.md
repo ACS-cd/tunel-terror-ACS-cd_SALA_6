@@ -78,11 +78,11 @@ Figure es contenido que lleva un título agrupado a ello, es independiente al re
 - **Pista de nivel usada:** ninguna
 
 ### Reto 6
-- **Pregunta:** ¿Qué partes del esqueleto del paso 1 se repiten en cualquier página? ¿Cuáles cambian?
-¿Cómo enlazas la misma hoja de estilos desde una segunda página?
-¿Qué es un atributo global como class y para qué lo usa la hoja de estilos?
-- **Fuente:** enlace a MDN o a la especificación 
-- **Lo que dice (con mis palabras):** 
+- **Pregunta:** ¿Qué partes del esqueleto del paso 1 se repiten en cualquier página? ¿Cuáles cambian? La parte que contiene los metadatos, header y los comentarios.
+¿Cómo enlazas la misma hoja de estilos desde una segunda página? Colocando el nombre concreto que se ha estipulado en la hoja css.
+¿Qué es un atributo global como class y para qué lo usa la hoja de estilos? Es una etiqueta que se puede añadir para dar determinadas características- La hoja de estilos lo usa para determinar qué parte va en un estilo u otro.
+- **Fuente:** enlace a MDN o a la especificación [text](https://developer.mozilla.org/es/docs/Web/HTML/Reference/Global_attributes)
+- **Lo que dice (con mis palabras):**  Soon características que se pueden añadir a los elementos para diferenciarlos de otros o sólo aplicar un estado específico al que contenga la etiqueta concreta.
 - **Prueba en pruebas.html:** 
 - **Decisión en mi sala:** uso ... en "..." porque ...
 - **Pista de nivel usada:** ninguna
